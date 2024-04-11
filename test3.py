@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+import subprocess
 
 def run_script_and_update_label():
     # Run the bash script
