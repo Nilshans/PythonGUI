@@ -11,7 +11,8 @@ def run_script_and_update_label():
 
 def update_label_text():
     with open("rlsLog", "r") as file:
-        content = file.readline().strip()
+        lines = file.readlines()
+        content = lines[2].strip()
         label1.config(text=content, font=("Arial", 12), fg="white")
 #    label1.config(text="Label 1 Updated", font=("Arial", 12), fg="white")
     label2.config(text="Label 2 Updated", font=("Arial", 12), fg="white")
